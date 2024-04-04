@@ -2,15 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This is a demo web page shows a datasheet with `react-datasheet-grid` and a chart  with `recharts`.
+This is a web page shows a 3D model with a background.
 
-You can add rows and extra contents in the datasheet yet it doesn't save data you would type.
+You can control the model's orbit and see the model since it provides you with light effect.
 
-BarChart data here is locally defined as 'data'. You can check recharts UI.
+`webGL` is a method to show 3D models on a web.
 
-When you hover Navigation bar, you can see the name of each icon.
+Since it's a bit difficult to use, `three.js` is used for managing codes easier.
 
-All the components were made with `MUI`.
+and `drei`, `fiber` are React optimized version of three.js.
+
+With drei and fiber, you can build up a webpage with 3d models easier and faster than just using three.js.
+
+Here, the 3D model was created solely byself using `SketUp`, one of the 3D modeling tools.
 
 ## Getting Started
 
