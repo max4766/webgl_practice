@@ -1,43 +1,74 @@
-# Getting Started with Create React App
+# Introduction
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This is a demo web page shows a datasheet with `react-datasheet-grid` and a chart  with `recharts`.
 
-In the project directory, you can run:
+You can add rows and extra contents in the datasheet yet it doesn't save data you would type.
 
-### `npm start`
+BarChart data here is locally defined as 'data'. You can check recharts UI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When you hover Navigation bar, you can see the name of each icon.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+All the components were made with `MUI`.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First, copy this project's URL and clone this project into your local with git :
 
-### `npm run build`
+```bash
+git clone [project URL]
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+FYI, No need to make a new folder for this project. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+it is already packed in the folder with it's project name when you clone.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then, recover packages. update node_modules with the command below :
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Next, run the development server with one of the commands below (npm recommended) :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+yarn dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Congratulations! you can now see the view of this project! 
+
+## About the source
+
+- `src/components/Header.js` : This is the part where Navigationbar compromises using MUI components.
+
+even if you click the items, it won't redirect to other pages yet it shows the name of what each icon stands for.
+
+- `src/components/Main.js` : Main page where MainBarChart.js and MainDatasheet.js contents are mingled up in MUI grid component.
+
+- `src/components/MainBarChart.js` : Barchart. Data is defined here. It doesn't get data from other servers.
+
+this shows how recharts UI looks like.
+
+- `src/components/MainDatasheet.js` : Datasheet. As a default, you can add items by click Add button in a combination with adjusting rows input.
+
+there is no option to save data here.
+
+## Goal
+
+The goal of this project was `To swiftly ideate a concept with ready-made components with React and MUI`.
+
+this project has taken only less than an hour thought it takes a huge amount of time if you markup without framework and library.
 
 ## Learn More
 
