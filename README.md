@@ -46,25 +46,19 @@ Congratulations! you can now see the view of this project!
 
 ## About the source
 
-- `src/components/Header.js` : This is the part where Navigationbar compromises using MUI components.
+- `src/App.js` : all the components are pre-built with `drei` and `fiber`.
 
-even if you click the items, it won't redirect to other pages yet it shows the name of what each icon stands for.
+Environment, OrbitControls are possible thanks to drei.
 
-- `src/components/Main.js` : Main page where MainBarChart.js and MainDatasheet.js contents are mingled up in MUI grid component.
+uploading 3D models are possible thanks to fiber.
 
-- `src/components/MainBarChart.js` : Barchart. Data is defined here. It doesn't get data from other servers.
-
-this shows how recharts UI looks like.
-
-- `src/components/MainDatasheet.js` : Datasheet. As a default, you can add items by click Add button in a combination with adjusting rows input.
-
-there is no option to save data here.
+Here, there are no extra components defined in the directory but App.js.
 
 ## Goal
 
-The goal of this project was `To swiftly ideate a concept with ready-made components with React and MUI`.
+The goal of this project was `To show a 3D model with a website using webGL but faster and easier`
 
-this project has taken only less than an hour thought it takes a huge amount of time if you markup without framework and library.
+It was possible because React uses components and drei and fiber are a componented way of three.js.
 
 ## Learn More
 
